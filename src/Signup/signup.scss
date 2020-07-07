@@ -1,0 +1,36 @@
+@import '~bootstrap';
+
+    .signup-img {
+        height: 30vh;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    // .btn {
+    //     background: linear-gradient(45deg, rgba(225,27,242,1) 11%, rgba(255,146,29,1) 92%);
+    //     border: 2px;
+    // }
+
+
+@media (min-width: 768px) {
+
+    // .col {
+    //     height: 96vh;
+    // }
+    
+    .signup-img {
+        background-position: center center;
+        // height: 94vh;
+    }
+    
+    .signup-form {
+        padding: 80px 20px;
+    }
+    
+}
+
+
+
