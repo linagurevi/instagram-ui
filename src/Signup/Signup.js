@@ -44,8 +44,8 @@ function Signup() {
     return (
         
              <div className="row m-0">
-                <div className="col d-flex justify-content-center signup-img" style={{backgroundImage: `url(${bgImage})` }}></div>
-                <div className="col-md d-flex justify-content-center signup-form">
+                <div className="col justify-content-center login-img" style={{backgroundImage: `url(${bgImage})` }}></div>
+                <div className="col-md-6 d-flex justify-content-center login-form">
                     <div className="col-10 mt-5">
                     <h2>Sign up</h2>
                     <Formik initialValues={{username: '', password: '', email: '', agreeToTerms: false}}

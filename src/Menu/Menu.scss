@@ -1,5 +1,21 @@
-@import '~bootstrap';
-
 .Menu {
-    height: 6vh;
-}
+    height: 60px;
+  
+    .navbar-brand {
+      color: #f54555;
+    }
+  
+    .nav-link {
+      color: #ffffff;
+      transition: color 200ms;
+      font-size: 1.2em;
+      padding: 0 12px;
+  
+      &:hover {
+        color: #f54555;
+        text-decoration: none;
+      }
+    }
+  
+  }
+  

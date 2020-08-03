@@ -29,9 +29,9 @@ function LogIn() {
             const loggedUser = await res.json();
             setUser(loggedUser);
             history.push('/'); // redirect home
-            console.log('yes'); 
+            console.log('ok'); 
         } else if (res.status === 401) {
-            console.log('no'); 
+            console.log('failed'); 
         } else {
             console.log('unknown error');
         }
@@ -46,9 +46,9 @@ function LogIn() {
     return (
         
             <div className="row">
-                <div className="justify-content-center login-img" style={{backgroundImage: `url(${bgImage})` }}></div>
+                <div className="col justify-content-center login-img" style={{backgroundImage: `url(${bgImage})` }}></div>
                 <div className="col-md-6 d-flex justify-content-center login-form">
-                    <div className="col-10 mt-4 pl-0">
+                    <div className="col-10 mt-5">
                     <h2>Log in</h2>
                 <Formik initialValues={{username: '', password: ''}}
                         validationSchema={LoginSchema}
